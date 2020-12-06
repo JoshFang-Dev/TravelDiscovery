@@ -1,22 +1,23 @@
 # Travel Discovery
-<img src="https://github.com/28cmm/EZWorkout/blob/master/Picture/1.jpg" width="400" height="790">
-<img src="https://github.com/28cmm/EZWorkout/blob/master/Picture/4.jpg" width="400" height="790">
-<img src="https://github.com/28cmm/EZWorkout/blob/master/Picture/2.jpg" width="400" height="790">
+<img src="https://github.com/28cmm/TravelDiscovery/blob/master/picture/screenshot/1.PNG" width="200" height="400">
+<img src="https://github.com/28cmm/TravelDiscovery/blob/master/picture/screenshot/2.PNG" width="200" height="400">
+<img src="https://github.com/28cmm/TravelDiscovery/blob/master/picture/screenshot/3.PNG" width="200" height="400">
+<img src="https://github.com/28cmm/TravelDiscovery/blob/master/picture/screenshot/4.PNG" width="200" height="400">
+<img src="https://github.com/28cmm/TravelDiscovery/blob/master/picture/screenshot/5.PNG" width="200" height="400">
+<img src="https://github.com/28cmm/TravelDiscovery/blob/master/picture/screenshot/6.PNG" width="200" height="400">
+<img src="https://github.com/28cmm/TravelDiscovery/blob/master/picture/screenshot/7.PNG" width="200" height="400">
+<img src="https://github.com/28cmm/TravelDiscovery/blob/master/picture/screenshot/8.PNG" width="200" height="400">
+
+
 
 
 ## Getting Started
-
-### Installing
-
-```
-pod install
-open the .xcwordspace
-```
 
 ## Built With
 * SwiftUI
 * CoreLocation
 * Mapkit
+* UIViewRepresentable
 
 
 ## Third Party Libary
@@ -30,7 +31,6 @@ Please read the [contribution guidelines](contributing.md) first.
 ## Authors
 
 * **28cm** - *Initial work* - [Josh Fang](www.joshuafang.com)
-* **Penjat** - *Initial work* - [Spencer Symington]()
 
 ## License
 
