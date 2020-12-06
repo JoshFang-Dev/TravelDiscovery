@@ -1,4 +1,5 @@
 # Travel Discovery
+<p float = "center">
 <img src="https://github.com/28cmm/TravelDiscovery/blob/master/picture/screenshot/1.PNG" width="200" height="400">
 <img src="https://github.com/28cmm/TravelDiscovery/blob/master/picture/screenshot/2.PNG" width="200" height="400">
 <img src="https://github.com/28cmm/TravelDiscovery/blob/master/picture/screenshot/3.PNG" width="200" height="400">
@@ -7,7 +8,7 @@
 <img src="https://github.com/28cmm/TravelDiscovery/blob/master/picture/screenshot/6.PNG" width="200" height="400">
 <img src="https://github.com/28cmm/TravelDiscovery/blob/master/picture/screenshot/7.PNG" width="200" height="400">
 <img src="https://github.com/28cmm/TravelDiscovery/blob/master/picture/screenshot/8.PNG" width="200" height="400">
-
+</p>
 
 
 
