@@ -7,17 +7,6 @@
 //
 
 import SwiftUI
-
-struct NavigationLazyView<T: View>: View {
-    let build: () -> T
-    init(_ build: @autoclosure @escaping () -> T) {
-        self.build = build
-    }
-    var body: T {
-        build()
-    }
-}
-
 struct DiscoverCategoriesView: View {
     let categories:[Category] = [
         .init(name: "Art", imageName: "paintpalette.fill"),
@@ -63,6 +52,6 @@ struct DiscoverCategoriesView: View {
 
 struct DiscoverCategoriesView_Previews: PreviewProvider {
     static var previews: some View {
-        DiscoverView()
+        HomeView()
     }
 }

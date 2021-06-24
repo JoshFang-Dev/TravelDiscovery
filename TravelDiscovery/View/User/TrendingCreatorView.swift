@@ -42,7 +42,7 @@ struct TrendingCreatorView: View {
 struct TrendingCreatorView_Previews: PreviewProvider {
     static var previews: some View {
         TrendingCreatorView()
-        DiscoverView()
+        HomeView()
     }
 }
 //

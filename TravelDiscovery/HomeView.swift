@@ -7,7 +7,7 @@
 //
 
 import SwiftUI
-struct DiscoverView: View {
+struct HomeView: View {
     
     init(){
         UINavigationBar.appearance().largeTitleTextAttributes = [
@@ -24,7 +24,7 @@ struct DiscoverView: View {
                 } else {
                     // Fallback on earlier versions
                 }
-                
+
                 Color.discoverBackground
                     .offset(y:HEIGHTSPACE*10)
                 ScrollView{
@@ -54,15 +54,15 @@ struct DiscoverView: View {
                     .padding(.top,HEIGHTSPACE)
                     
                 }
-            }
-            .navigationBarTitle("Discover")
+            }.navigationBarTitle("Discover")
+            
         }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        DiscoverView()
+        HomeView()
     }
 }
 //40.78417894034642, -73.96030985433653

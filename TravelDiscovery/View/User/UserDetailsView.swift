@@ -8,46 +8,6 @@
 import SwiftUI
 import KingfisherSwiftUI
 
-// https://travel.letsbuildthatapp.com/travel_discovery/user?id=2
-
-struct UserDetails: Decodable {
-    let username, firstName, lastName, profileImage: String
-    let followers, following: Int
-    let posts: [Posted]
-}
-
-struct Posted: Decodable, Hashable {
-    let title, imageUrl, views: String
-    let hashtags: [String]
-}
-
-class UserDetailsViewModel: ObservableObject {
-    
-    @Published var userDetails: UserDetails?
-    
-    init(userId: Int) {
-        // network code
-        
-        guard let url = URL(string: "https://travel.letsbuildthatapp.com/travel_discovery/user?id=\(userId)") else { return }
-        
-        URLSession.shared.dataTask(with: url) { (data, resp, err) in
-            
-            DispatchQueue.main.async {
-                guard let data = data else { return }
-                
-                do {
-                    self.userDetails = try JSONDecoder().decode(UserDetails.self, from: data)
-                } catch let jsonError {
-                    print("Decoding failed for UserDetails:", jsonError)
-                }
-                print(data)
-            }
-            
-        }.resume()
-    }
-    
-}
-
 struct UserDetailsView: View {
     
     // setup dummy vm
@@ -192,7 +152,7 @@ struct UserDetailsView: View {
 
 struct UserDetailsView_Previews: PreviewProvider {
     static var previews: some View {
-        DiscoverView()
+        HomeView()
         
         NavigationView {
             UserDetailsView(user: .init(name: "amy", imageName: "Amy Adams", id: 0))

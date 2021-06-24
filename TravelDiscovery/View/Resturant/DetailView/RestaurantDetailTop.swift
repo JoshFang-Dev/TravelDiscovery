@@ -54,7 +54,7 @@ struct RestDetailTopView: View {
 
 struct RestDetailTopView_Previews: PreviewProvider {
     static var previews: some View {
-        DiscoverView()
+        HomeView()
        // RestDetailTopView(restaurant: resturants[0])
     }
 }

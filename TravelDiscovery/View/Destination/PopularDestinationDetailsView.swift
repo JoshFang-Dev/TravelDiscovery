@@ -89,7 +89,7 @@ struct PopularDestinationDetailsView: View{
 }
 struct PopularDestinationDetailsView_Previews: PreviewProvider {
     static var previews: some View {
-        DiscoverView()
+        HomeView()
         //PopularDestinationDetailsView(destination: )
     }
 }

@@ -9,55 +9,7 @@
 import SwiftUI
 import KingfisherSwiftUI
 
-struct RestaurantDetails: Decodable {
-    let id:Int
-    let description,name,city,country,category,thumbnail: String
-    let popularDishes: [Dish]
-    let reviews: [Review]
-    let photos: [String]
-}
 
-struct Dish: Decodable, Hashable {
-    let name,price,photo:String
-    let numPhotos: Int
-}
-
-struct Review: Decodable, Hashable {
-    let text:String
-    let rating:Int
-    let user : ReviewUser
-}
-
-struct ReviewUser: Decodable, Hashable {
-    let username, firstName,lastName,profileImage:String
-    let followers,following,id:Int
-    let posts: [Post]
-}
-
-struct Post: Decodable, Hashable{
-    let title,imageUrl,views: String
-    let hashtags: [String]
-}
-
-class RestaurantDetailsViewModel: ObservableObject{
-    @Published var isLoading = true
-    @Published var details: RestaurantDetails?
-    init(id:Int){
-       
-        let urlString = "https://travel.letsbuildthatapp.com/travel_discovery/restaurant?id=\(id)"
-       
-        guard let url = URL(string: urlString) else {return}
-        URLSession.shared.dataTask(with: url) { (data, resp, err) in
-            guard let data = data else {return}
-            DispatchQueue.main.async {
-                self.details = try?JSONDecoder().decode(RestaurantDetails.self, from: data)
-                print("loading restaurant: ", self.details?.name)
-            }
-            
-        }.resume()
-        
-    }
-}
 
 
 

@@ -23,7 +23,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         UINavigationBar.appearance().barTintColor = NAVBACKGROUNDCOLOR
         UINavigationBar.appearance().tintColor = NAVTEXTCOLOR
        UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor : NAVTEXTCOLOR]
-        let contentView = DiscoverView()
+        let contentView = HomeView()
 
         // Use a UIHostingController as window root view controller.
         if let windowScene = scene as? UIWindowScene {

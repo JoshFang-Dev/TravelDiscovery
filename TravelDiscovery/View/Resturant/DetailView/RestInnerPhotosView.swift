@@ -16,12 +16,7 @@ struct RestInnerPhotosView: View {
     @State var selectedPhotoIndex = 0
     
     init(photoUrls:[String]){
-        UISegmentedControl.appearance().backgroundColor = .black
-        UISegmentedControl.appearance().selectedSegmentTintColor = .orange
-        let titleTextAttributes = [NSAttributedString.Key.foregroundColor:
-                                    UIColor.white]
-        UISegmentedControl.appearance().setTitleTextAttributes(titleTextAttributes, for: .selected)
-        UISegmentedControl.appearance().setTitleTextAttributes(titleTextAttributes, for: .normal)
+        
         self.photosUrls = photoUrls
         
     }
